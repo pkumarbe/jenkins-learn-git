@@ -1,11 +1,7 @@
-pipeline {
-    agent any
-    stages {
-        stage('One') {
-                steps {
-                        echo 'Hi, Welcome jenkins CICD Demo'
-			
-                }
-        }
-    }
+pipeline{
+	agent {
+		docker{
+			image 'python:2.7-slim'
+		}
+	}
 }
