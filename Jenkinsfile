@@ -1,7 +1,9 @@
 pipeline {
-	agent {
-		docker {
-			image 'python:2.7-slim'
+	stages {
+		agent {
+			docker {
+				image 'python:2.7-slim'
+			}
 		}
 	}
 }
