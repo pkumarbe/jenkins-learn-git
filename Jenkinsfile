@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, Welcome jenkins CICD'
+                        echo 'Hi, Welcome jenkins CICD Demo'
 			
                 }
         }
