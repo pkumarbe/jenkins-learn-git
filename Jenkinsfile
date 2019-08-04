@@ -1,7 +1,11 @@
-pipeline{
-	agent {
-		docker{
-			image 'python:2.7-slim'
-		}
-	}
+pipeline {
+    agent any
+    stages {
+        stage('One') {
+                steps {
+                        echo 'Hi, this is Zulaikha from edureka'
+			
+                }
+        }
+    }
 }
