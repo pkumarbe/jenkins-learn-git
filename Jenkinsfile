@@ -1,5 +1,6 @@
-pipeline {
-    agent {
-        docker { image 'python:2.7-slim' }
+agent {
+    // Equivalent to "docker build -f Dockerfile.build --build-arg version=1.0.2 ./build/
+    dockerfile {
+        filename 'Dockerfile'
     }
 }
